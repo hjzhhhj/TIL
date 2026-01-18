@@ -112,7 +112,7 @@ const SectionHeader = styled("div")`
 
 const SectionTitle = styled("h2")`
   font-family: "Paperlogy", serif;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
   color: #1f3b25;
 `;
@@ -156,5 +156,15 @@ const Note = styled("p")`
   background: #e6f5e4;
   padding: 10px 12px;
   border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  &::before {
+    content: "🍀";
+    line-height: 1.2;
+    font-size: 14px;
+    margin-top: 1px;
+  }
 `;
 </script>

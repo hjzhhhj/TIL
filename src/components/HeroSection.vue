@@ -2,7 +2,7 @@
   <Hero>
     <HeroText>
       <Title>Today I Learned</Title>
-      <Subtitle>기초부터 차근차근 쌓아가는 개발 기록</Subtitle>
+      <Subtitle>기초부터 차근차근 쌓아가는 개발 기록 🍀</Subtitle>
     </HeroText>
   </Hero>
 </template>
@@ -11,7 +11,7 @@
 import styled from "vue3-styled-components";
 
 const Hero = styled("section")`
-  margin: 0 auto 40px;
+  margin: 20px auto 60px;
   max-width: 1200px;
   position: relative;
   z-index: 1;

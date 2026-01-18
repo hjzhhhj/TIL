@@ -1,7 +1,7 @@
 export const sections = [
   {
     id: "cs",
-    title: "CS 기초",
+    title: "CS",
     items: [
       {
         q: "프로세스 vs 스레드",
