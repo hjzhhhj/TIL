@@ -19,6 +19,14 @@ export const sections = [
         ],
         note: "HTTPS는 TLS를 통해 서버를 인증하고 통신 내용을 암호화하여 중간자 공격으로부터 데이터의 기밀성과 무결성을 보장",
       },
+      {
+        q: "REST API vs RESTful API",
+        points: [
+          "REST API: REST 방식을 쓰는 API (URL과 HTTP 메서드 사용)",
+          "RESTful API: REST 방식을 잘 지킨 API (자원중심설계, HTTP 메서드 의미 준수, 무상태성)",
+        ],
+        note: "POST /getUser 같은 경우도 REST API라고 부르긴 하지만, 자원 중심 설계와 HTTP 메서드 의미를 지키지 않아 RESTful하다고 보긴 어려움",
+      },
     ],
   },
 ];
