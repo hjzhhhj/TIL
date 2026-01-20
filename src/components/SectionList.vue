@@ -146,6 +146,10 @@ const Points = styled("ul")`
   line-height: 1.6;
   color: #2d4633;
   font-size: 14px;
+
+  li {
+    white-space: pre-line;
+  }
 `;
 
 const Note = styled("p")`
