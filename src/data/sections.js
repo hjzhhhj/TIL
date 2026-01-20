@@ -23,7 +23,7 @@ export const sections = [
         q: "REST API vs RESTful API",
         points: [
           "REST API: REST 방식을 쓰는 API\n(URL과 HTTP 메서드 사용)",
-          "RESTful API: REST 방식을 잘 지킨 API\n(자원중심설계, HTTP 메서드 의미 준수, 무상태성)",
+          "RESTful API: REST 방식을 잘 지킨 API (자원중심설계, HTTP 메서드 의미 준수, 무상태성)",
         ],
         note: "POST /getUser 같은 경우도 REST API라고 부르긴 하지만, 자원 중심 설계와 HTTP 메서드 의미를 지키지 않아 RESTful하다고 보긴 어려움",
       },
