@@ -15,7 +15,7 @@ export const sections = [
         q: "HTTP vs HTTPS",
         points: [
           "HTTP: 데이터가 암호화가 안된 상태로 전송되어 중간자 공격에 취약함",
-          "HTTPS: TLS로 데이터 암호화",
+          "HTTPS: TLS로 데이터 암호화\n(TLS는 안전한 통신을 위한 암호화 프로토콜)",
         ],
         note: "HTTPS는 TLS를 통해 서버를 인증하고 통신 내용을 암호화하여 중간자 공격으로부터 데이터의 기밀성과 무결성을 보장",
       },
@@ -36,6 +36,21 @@ export const sections = [
           "PATCH: 자원 일부 수정, 수정한 부분만 변경됨",
           "DELETE: 자원 삭제, 한 번 삭제해도, 다시 요청하면 삭제된 상태 그대로 유지됨",
         ],
+      },
+    ],
+  },
+  {
+    id: "js, ts",
+    title: "JavaScript & TypeScript",
+    items: [
+      {
+        q: "var, let, const",
+        points: [
+          "var: 함수 스코프, 중복 선언 가능, 호이스팅 발생",
+          "let: 블록 스코프, 중복 선언 불가, 호이스팅 발생하지만 선언 전 사용 불가",
+          "const: 블록 스코프, 중복 선언 불가, 재할당 불가, 호이스팅 발생하지만 선언 전 사용 불가",
+        ],
+        note: "const로 선언된 객체나 배열은 내부 값 변경 가능하지만, 재할당은 불가능!",
       },
     ],
   },
