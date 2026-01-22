@@ -2,7 +2,11 @@
   <Page>
     <HeroSection />
     <SectionList :sections="sections" @active-change="handleActiveChange" />
-    <SectionNav :sections="sections" :active-id="activeId" @navigate="scrollToSection" />
+    <SectionNav
+      :sections="sections"
+      :active-id="activeId"
+      @navigate="scrollToSection"
+    />
   </Page>
 </template>
 
@@ -21,6 +25,7 @@ const handleActiveChange = (id) => {
 };
 
 const scrollToSection = (id) => {
+  activeId.value = id;
   const el = document.getElementById(id);
   if (el) {
     const top = el.getBoundingClientRect().top + window.scrollY - 24;
@@ -30,12 +35,13 @@ const scrollToSection = (id) => {
 
 const Page = styled("main")`
   min-height: 100vh;
-  background: radial-gradient(circle at 15% 20%, #e8f6e6 0%, transparent 48%),
+  background:
+    radial-gradient(circle at 15% 20%, #e8f6e6 0%, transparent 48%),
     radial-gradient(circle at 85% 10%, #f2fbef 0%, transparent 45%),
     linear-gradient(140deg, #eef8ea 0%, #f6fbf2 45%, #e9f5e5 100%);
   color: #1b1b1f;
   font-family: "Pretendard", sans-serif;
-  padding: 40px 84px 64px 24px;
+  padding: 40px 84px 150px 24px;
   position: relative;
   overflow: hidden;
 
@@ -47,7 +53,11 @@ const Page = styled("main")`
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(170, 220, 170, 0.5), transparent 70%);
+    background: radial-gradient(
+      circle,
+      rgba(170, 220, 170, 0.5),
+      transparent 70%
+    );
     z-index: 0;
   }
 
@@ -59,7 +69,11 @@ const Page = styled("main")`
     width: 300px;
     height: 300px;
     border-radius: 40% 60% 60% 40%;
-    background: radial-gradient(circle, rgba(198, 230, 198, 0.4), transparent 70%);
+    background: radial-gradient(
+      circle,
+      rgba(198, 230, 198, 0.4),
+      transparent 70%
+    );
     z-index: 0;
   }
 

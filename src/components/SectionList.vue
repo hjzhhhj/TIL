@@ -25,7 +25,7 @@
 
 <script setup>
 import styled from "vue3-styled-components";
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 
 defineProps({
   sections: {
@@ -39,9 +39,8 @@ const sectionElements = ref({});
 const observer = ref(null);
 
 const setSectionRef = (id) => (el) => {
-  if (el) {
-    sectionElements.value[id] = el;
-  }
+  if (!el) return;
+  sectionElements.value[id] = el?.$el ?? el;
 };
 
 const updateActiveSection = (entries) => {
@@ -58,14 +57,17 @@ const updateActiveSection = (entries) => {
   }
 };
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick();
   observer.value = new IntersectionObserver(updateActiveSection, {
     rootMargin: "-20% 0px -60% 0px",
     threshold: [0, 0.2, 0.6],
   });
 
   Object.values(sectionElements.value).forEach((el) => {
-    observer.value.observe(el);
+    if (el instanceof Element) {
+      observer.value.observe(el);
+    }
   });
 });
 
