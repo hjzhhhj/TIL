@@ -54,4 +54,18 @@ export const sections = [
       },
     ],
   },
+  {
+    id: "React",
+    title: "React",
+    items: [
+      {
+        q: "REACT를 사용하는 이유",
+        points: [
+          "컴포넌트를 기반으로 재사용성 높은 UI 개발",
+          "Virtual DOM으로 성능 개선",
+          "상태 관리 용이",
+        ],
+      },
+    ],
+  },
 ];
