@@ -65,7 +65,7 @@ export const sections = [
           "Virtual DOM을 사용해 변경된 부분만 렌더링하여 성능이\n좋음",
           "상태 변화에 따라 UI가 자동으로 업데이트되어 상태 관리가 쉬움",
         ],
-        note: "React는 state가 바뀌면 Virtual DOM으로 변경된 부분만 비교·렌더링해서 UI를 자동 업데이트함",
+        note: "Virtual DOM은 실제 DOM 수정 전에 변경점만 계산해서 최소한으로 업데이트",
       },
     ],
   },
