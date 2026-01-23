@@ -59,12 +59,13 @@ export const sections = [
     title: "React",
     items: [
       {
-        q: "REACT를 사용하는 이유",
+        q: "React를 사용하는 이유",
         points: [
-          "컴포넌트를 기반으로 재사용성 높은 UI 개발",
-          "Virtual DOM으로 성능 개선",
-          "상태 관리 용이",
+          "React는 컴포넌트 기반 구조로 재사용성이 높음",
+          "Virtual DOM을 사용해 변경된 부분만 렌더링하여 성능이\n좋음",
+          "상태 변화에 따라 UI가 자동으로 업데이트되어 상태 관리가 쉬움",
         ],
+        note: "React는 state가 바뀌면 Virtual DOM으로 변경된 부분만 비교·렌더링해서 UI를 자동 업데이트함",
       },
     ],
   },
