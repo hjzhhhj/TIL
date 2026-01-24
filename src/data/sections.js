@@ -67,6 +67,14 @@ export const sections = [
         ],
         note: "Virtual DOM은 실제 DOM 수정 전에 변경점만 계산해서 최소한으로 업데이트",
       },
+      {
+        q: "State vs Props",
+        points: [
+          "State: 컴포넌트 내부에서 관리\n값 변경 가능 (setState)\n변경 시 리렌더링 발생",
+          "Props: 부모 → 자식 전달 데이터\n읽기 전용 (자식이 수정 X)\n변경되면 자식 리렌더링",
+        ],
+        note: "State는 내가 관리하는 값, Props는 부모가 준 값",
+      },
     ],
   },
 ];
