@@ -75,6 +75,15 @@ export const sections = [
         ],
         note: "State는 내가 관리하는 값, Props는 부모가 준 값",
       },
+      {
+        q: "useState / useEffect / useRef",
+        points: [
+          "useState: 컴포넌트의 상태 관리\n상태 변경 시 리렌더링",
+          "useEffect: 렌더링 이후 실행되는 사이드 이펙트 처리\n예: API 호출, 이벤트 등록/해제, 타이머",
+          "useRef: 변경 가능한 참조값 관리, 값 변경해도 리렌더링 X",
+        ],
+        note: "useState는 값, useEffect는 동작,useRef는 DOM 접근이나 이전 값 저장에 유용함",
+      },
     ],
   },
 ];
