@@ -84,6 +84,11 @@ export const sections = [
         ],
         note: "useState는 값, useEffect는 동작,useRef는 DOM 접근이나 이전 값 저장에 유용함",
       },
+      {
+        q: "리렌더링 발생 조건",
+        points: ["State 변경 시", "Props 변경 시", "부모 컴포넌트 리렌더링 시"],
+        note: "같은 값으로 setState → 리렌더링 안 될 수도 있음\n리렌더링 ≠ DOM 전체 다시 그림",
+      },
     ],
   },
 ];
