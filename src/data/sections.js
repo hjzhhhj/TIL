@@ -91,4 +91,17 @@ export const sections = [
       },
     ],
   },
+  {
+    id: "Node.js",
+    title: "Node.js",
+    items: [
+      {
+        q: "Node.js란?",
+        points: [
+          "Chrome V8 JavaScript 엔진 기반의 자바스크립트 런타임으로 브라우저 밖에서도 자바스크립트를 실행할 수 있게 해줌",
+        ],
+        note: "서버도 아니고 프레임워크도 아님\n서버를 만들 수 있는 실행 환경이고, Express 같은 프레임워크를 사용해 서버 개발 가능",
+      },
+    ],
+  },
 ];
