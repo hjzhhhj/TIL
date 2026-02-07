@@ -156,6 +156,7 @@ const Points = styled("ul")`
 
 const Note = styled("p")`
   margin: 0;
+  margin-top: auto;
   font-size: 13px;
   line-height: 1.5;
   color: #2f5a36;
