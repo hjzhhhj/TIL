@@ -151,6 +151,16 @@ export const sections = [
         ],
         note: "Rest는 묶기, Spread는 펼치기 (정반대 개념)",
       },
+      {
+        q: "filter / map / forEach / find",
+        points: [
+          "filter: 조건을 만족하는 요소만 반환 (새 배열)",
+          "map: 각 요소를 변환해 새 배열 반환",
+          "forEach: 반복 실행만, 반환값 없음",
+          "find: 조건을 만족하는 첫 번째 요소 반환",
+        ],
+        note: "filter는 걸러내기, map은 변환하기",
+      },
     ],
   },
 
