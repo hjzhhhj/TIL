@@ -161,6 +161,14 @@ export const sections = [
         ],
         note: "filter는 걸러내기, map은 변환하기",
       },
+      {
+        q: "some / every",
+        points: [
+          "some: 하나라도 조건 만족하면 true",
+          "every: 모두 조건 만족하면 true",
+        ],
+        note: "Boolean 결과를 반환하는 검사 메서드",
+      },
     ],
   },
 
