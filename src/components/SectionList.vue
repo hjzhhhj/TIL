@@ -93,6 +93,10 @@ const Section = styled("section")`
   gap: 20px;
   animation: fadeUp 0.7s ease both;
 
+  @media (max-width: 540px) {
+    gap: 14px;
+  }
+
   @keyframes fadeUp {
     from {
       opacity: 0;
@@ -117,12 +121,25 @@ const SectionTitle = styled("h2")`
   font-size: 24px;
   margin: 0;
   color: #1f3b25;
+
+  @media (max-width: 540px) {
+    font-size: 20px;
+  }
 `;
 
 const CardGrid = styled("div")`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
 `;
 
 const Card = styled("article")`
@@ -133,6 +150,12 @@ const Card = styled("article")`
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @media (max-width: 540px) {
+    padding: 16px;
+    border-radius: 16px;
+    gap: 10px;
+  }
 `;
 
 const CardTitle = styled("h3")`
@@ -151,6 +174,7 @@ const Points = styled("ul")`
 
   li {
     white-space: pre-line;
+    overflow-wrap: anywhere;
   }
 `;
 
@@ -166,6 +190,11 @@ const Note = styled("p")`
   display: flex;
   align-items: flex-start;
   gap: 8px;
+
+  @media (max-width: 540px) {
+    font-size: 12px;
+    padding: 9px 10px;
+  }
 
   &::before {
     content: "🍀";

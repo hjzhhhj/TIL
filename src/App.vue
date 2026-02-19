@@ -78,7 +78,11 @@ const Page = styled("main")`
   }
 
   @media (max-width: 900px) {
-    padding: 36px 20px 56px;
+    padding: 32px 18px 120px;
+  }
+
+  @media (max-width: 540px) {
+    padding: 24px 14px 112px;
   }
 `;
 </script>

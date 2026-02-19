@@ -17,6 +17,10 @@ const Hero = styled("section")`
   z-index: 1;
   animation: slideIn 0.4s ease-out both;
 
+  @media (max-width: 540px) {
+    margin: 8px auto 32px;
+  }
+
   @keyframes slideIn {
     from {
       opacity: 0;
@@ -33,6 +37,10 @@ const HeroText = styled("div")`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (max-width: 540px) {
+    gap: 12px;
+  }
 `;
 
 const Title = styled("h1")`
@@ -50,5 +58,10 @@ const Subtitle = styled("p")`
   margin: 0;
   color: #35543a;
   max-width: 320px;
+
+  @media (max-width: 540px) {
+    font-size: 14px;
+    max-width: 100%;
+  }
 `;
 </script>

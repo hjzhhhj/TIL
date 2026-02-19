@@ -49,10 +49,17 @@ const Nav = styled("aside")`
   z-index: 2;
 
   @media (max-width: 900px) {
-    position: static;
+    position: fixed;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    top: auto;
     transform: none;
-    margin-top: 24px;
-    width: fit-content;
+    margin-top: 0;
+    width: auto;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(27, 27, 31, 0.12);
   }
 `;
 
@@ -63,6 +70,19 @@ const NavList = styled("ul")`
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @media (max-width: 900px) {
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  @media (max-width: 900px) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 `;
 
 const NavItem = styled("li")`
@@ -81,10 +101,16 @@ const NavButton = styled("button")`
   font-weight: 600;
   color: #2f4a34;
   cursor: pointer;
+  white-space: nowrap;
 
   &[data-active='true'] {
     background: rgba(184, 220, 184, 0.55);
     color: #19301f;
+  }
+
+  @media (max-width: 900px) {
+    padding: 8px 10px;
+    font-size: 11px;
   }
 `;
 
