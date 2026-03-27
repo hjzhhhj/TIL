@@ -77,6 +77,20 @@ export const sections = [
         ],
         note: "브라우저 캐시, CDN, 서버 캐시 등 다양한 형태가 있음",
       },
+      {
+        q: "OSI 7계층",
+        points: [
+          "네트워크 통신을 7단계로 나눈 모델",
+          "응용(Application): 사용자와 직접 상호작용 (HTTP, FTP)",
+          "표현(Presentation): 데이터 형식 변환, 암호화",
+          "세션(Session): 연결 관리",
+          "전송(Transport): 데이터 전달 및 오류 제어 (TCP, UDP)",
+          "네트워크(Network): IP 기반 라우팅 (IP)",
+          "데이터링크(Data Link): 물리적 주소 기반 전송 (MAC)",
+          "물리(Physical): 실제 전기 신호 전송",
+        ],
+        note: "OSI는 이론 모델이고, 실제 인터넷은 TCP/IP 모델을 사용함",
+      },
     ],
   },
   {
