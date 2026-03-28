@@ -91,6 +91,15 @@ export const sections = [
         ],
         note: "OSI는 이론 모델이고, 실제 인터넷은 TCP/IP 모델을 사용함",
       },
+      {
+        q: "JWT (JSON Web Token)",
+        points: [
+          "사용자 인증 정보를 JSON 형태로 담은 토큰",
+          "Header.Payload.Signature 구조",
+          "서버는 상태를 저장하지 않고 토큰으로 인증 처리",
+        ],
+        note: "세션과 달리 서버에 저장하지 않아 확장성 좋지만, 토큰 탈취 시 위험 (보안 중요)",
+      },
     ],
   },
   {
