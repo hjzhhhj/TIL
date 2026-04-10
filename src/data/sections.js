@@ -116,6 +116,15 @@ export const sections = [
         ],
         note: "CSR은 사용자 경험(UX)에 강점, SSR은 초기 성능과 SEO에 강점",
       },
+      {
+        q: "SEO (Search Engine Optimization)",
+        points: [
+          "검색엔진에서 웹페이지가 상위에 노출되도록 최적화하는 작업",
+          "검색 결과 상위 노출 → 사용자 유입 증가",
+          "HTML에 콘텐츠가 포함되어 있어야 검색엔진이 잘 이해함",
+        ],
+        note: "CSR은 초기 HTML이 비어 있어 SEO에 불리하고, SSR은 완성된 HTML을 제공해 SEO에 유리함",
+      },
     ],
   },
   {
